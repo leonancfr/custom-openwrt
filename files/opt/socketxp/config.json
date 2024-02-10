@@ -1,0 +1,14 @@
+{
+    "work_dir": "/opt/socketxp",
+    "tunnels":[
+      {
+        "destination":"tcp://127.0.0.1:22"
+      },
+      {
+        "destination":"http://127.0.0.1:80",
+        "custom_domain":"",
+        "subdomain":"gabriel-tech-######### LOCATION-NAME ##########"
+      }
+    ]
+  }
+  

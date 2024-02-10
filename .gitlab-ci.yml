@@ -1,0 +1,43 @@
+stages:
+  - build
+
+build:rc:
+  stage: build
+  image: $CI_REGISTRY_IMAGE:latest-rc
+  variables:
+    #TODO: GitLab has a nice environment mechanism for this purpose
+    ENVIRON: $STAGING_ENVIRON
+    MQTT_HOSTNAME: $STAGING_MQTT_HOSTNAME
+    MQTT_SERVER_PORT: $STAGING_MQTT_SERVER_PORT
+    MQTT_USER: $STAGING_MQTT_USER
+    MQTT_PASSWORD: $STAGING_MQTT_PASSWORD
+    SFTP_PASSWORD: $STAGING_SFTP_PASSWORD
+    SFTP_USER: $STAGING_SFTP_USER
+    SFTP_HOST: $STAGING_SFTP_HOST
+  script:
+    - ./build_charlinhos.sh
+    - ./sftp_publish.sh
+    - ./mqtt_publish.sh
+  only:
+    - merge_requests
+
+build:
+  stage: build
+  image: $CI_REGISTRY_IMAGE:latest
+  variables:
+    #TODO: GitLab has a nice environment mechanism for this purpose
+    # not added yet, will be populated when needed
+    ENVIRON: $PRODUCTION_ENVIRON
+    MQTT_HOSTNAME: $PRODUCTION_MQTT_HOSTNAME
+    MQTT_SERVER_PORT: $PRODUCTION_MQTT_SERVER_PORT
+    MQTT_USER: $PRODUCTION_MQTT_USER
+    MQTT_PASSWORD: $PRODUCTION_MQTT_PASSWORD
+    SFTP_PASSWORD: $PRODUCTION_SFTP_PASSWORD
+    SFTP_USER: $PRODUCTION_SFTP_USER
+    SFTP_HOST: $PRODUCTION_SFTP_HOST
+  script:
+    - ./build_charlinhos.sh
+    - ./sftp_publish.sh
+    - ./mqtt_publish.sh
+  only:
+    - tags

@@ -1,0 +1,6 @@
+[submodule "openwrt"]
+	path = openwrt
+	url = git@github.com:openwrt/openwrt.git
+[submodule "charlesgo"]
+	path = charlesgo
+	url = git@gitlab.com:gabriel-technologia/iot/charlesgo.git

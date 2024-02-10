@@ -1,0 +1,48 @@
+FROM ubuntu:20.04 AS build-stage
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Configure timezone 
+ENV TZ=America/Sao_Paulo
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
+# Install build dependencies
+RUN --mount=type=cache,target=/var/lib/apt,sharing=locked \
+        --mount=type=cache,target=/var/cache/apt,sharing=locked \
+        apt update && \
+        apt install -y --no-install-recommends --no-install-suggests \
+        ca-certificates \
+        git \
+        gawk \
+        make \
+        build-essential \
+        clang \
+        flex \
+        bison \
+        g++ \
+        gcc-multilib \
+        g++-multilib \
+        gettext \
+        libncurses-dev \
+        libssl-dev \
+        python3-distutils \
+        rsync \
+        unzip \
+        zlib1g-dev \
+        file \
+        wget \
+        time \
+        locales
+
+# Configure build env
+RUN locale-gen en_US.UTF-8
+
+ENV LANG en_US.UTF-8
+ENV LANGUAGE en_US:en
+ENV LC_ALL en_US.UTF-8
+
+# Add user 'cause using root is not allowed during build
+RUN groupadd -g 1001 gabriel && useradd -g 1001 -m -s /bin/bash -u 1001 gabriel
+USER gabriel
+
+ENTRYPOINT ["/bin/bash"]

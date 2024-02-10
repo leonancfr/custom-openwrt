@@ -1,0 +1,218 @@
+CONFIG_TARGET_ramips=y
+CONFIG_TARGET_ramips_mt76x8=y
+CONFIG_TARGET_ramips_mt76x8_DEVICE_hilink_hlk-7628n=y
+CONFIG_IB=y
+CONFIG_IB_STANDALONE=y
+CONFIG_IMAGEOPT=y
+CONFIG_LIBCURL_COOKIES=y
+CONFIG_LIBCURL_FILE=y
+CONFIG_LIBCURL_FTP=y
+CONFIG_LIBCURL_HTTP=y
+CONFIG_LIBCURL_NGHTTP2=y
+CONFIG_LIBCURL_NO_SMB="!"
+CONFIG_LIBCURL_OPENSSL=y
+CONFIG_LIBCURL_PROXY=y
+CONFIG_LIBQMI_COLLECTION_BASIC=y
+CONFIG_LIBQMI_WITH_MBIM_QMUX=y
+CONFIG_LIBQMI_WITH_QRTR_GLIB=y
+CONFIG_LIBSSH2_OPENSSL=y
+CONFIG_OPENSSL_ENGINE=y
+CONFIG_OPENSSL_PREFER_CHACHA_OVER_GCM=y
+CONFIG_OPENSSL_WITH_ASM=y
+CONFIG_OPENSSL_WITH_CHACHA_POLY1305=y
+CONFIG_OPENSSL_WITH_CMS=y
+CONFIG_OPENSSL_WITH_DEPRECATED=y
+CONFIG_OPENSSL_WITH_ERROR_MESSAGES=y
+CONFIG_OPENSSL_WITH_PSK=y
+CONFIG_OPENSSL_WITH_SRP=y
+CONFIG_OPENSSL_WITH_TLS13=y
+CONFIG_PACKAGE_atop=m
+CONFIG_PACKAGE_bash=y
+CONFIG_PACKAGE_cJSON=y
+CONFIG_PACKAGE_cgi-io=y
+CONFIG_PACKAGE_coreutils=y
+CONFIG_PACKAGE_coreutils-stty=y
+CONFIG_PACKAGE_glib2=y
+CONFIG_PACKAGE_gpiod-tools=y
+CONFIG_PACKAGE_htop=y
+CONFIG_PACKAGE_ip-tiny=y
+CONFIG_PACKAGE_ip6tables-nft=y
+CONFIG_PACKAGE_ipset=y
+CONFIG_PACKAGE_iptables-mod-conntrack-extra=y
+CONFIG_PACKAGE_iptables-mod-ipopt=y
+CONFIG_PACKAGE_iptables-nft=y
+CONFIG_PACKAGE_jq=y
+CONFIG_PACKAGE_kmod-hid=y
+CONFIG_PACKAGE_kmod-hid-generic=y
+CONFIG_PACKAGE_kmod-input-core=y
+CONFIG_PACKAGE_kmod-input-evdev=y
+CONFIG_PACKAGE_kmod-ip6tables=y
+CONFIG_PACKAGE_kmod-ipt-conntrack=y
+CONFIG_PACKAGE_kmod-ipt-conntrack-extra=y
+CONFIG_PACKAGE_kmod-ipt-core=y
+CONFIG_PACKAGE_kmod-ipt-ipopt=y
+CONFIG_PACKAGE_kmod-ipt-ipset=y
+CONFIG_PACKAGE_kmod-ipt-raw=y
+CONFIG_PACKAGE_kmod-mii=y
+CONFIG_PACKAGE_kmod-nf-ipt=y
+CONFIG_PACKAGE_kmod-nf-ipt6=y
+CONFIG_PACKAGE_kmod-nft-compat=y
+CONFIG_PACKAGE_kmod-nls-base=y
+CONFIG_PACKAGE_kmod-usb-core=y
+CONFIG_PACKAGE_kmod-usb-ehci=y
+CONFIG_PACKAGE_kmod-usb-hid=y
+CONFIG_PACKAGE_kmod-usb-net=y
+CONFIG_PACKAGE_kmod-usb-net-cdc-ether=y
+CONFIG_PACKAGE_kmod-usb-net-cdc-mbim=y
+CONFIG_PACKAGE_kmod-usb-net-cdc-ncm=y
+CONFIG_PACKAGE_kmod-usb-net-qmi-wwan=y
+CONFIG_PACKAGE_kmod-usb-net-rtl8152=y
+CONFIG_PACKAGE_kmod-usb-serial=y
+CONFIG_PACKAGE_kmod-usb-serial-option=y
+CONFIG_PACKAGE_kmod-usb-serial-wwan=y
+CONFIG_PACKAGE_kmod-usb-wdm=y
+CONFIG_PACKAGE_kmod-usb2=y
+CONFIG_PACKAGE_libattr=y
+CONFIG_PACKAGE_libbz2=y
+CONFIG_PACKAGE_libcares=y
+CONFIG_PACKAGE_libcurl=y
+CONFIG_PACKAGE_libevdev=y
+CONFIG_PACKAGE_libffi=y
+CONFIG_PACKAGE_libgdbm=y
+CONFIG_PACKAGE_libgpiod=y
+CONFIG_PACKAGE_libipset=y
+CONFIG_PACKAGE_libiptext=y
+CONFIG_PACKAGE_libiptext-nft=y
+CONFIG_PACKAGE_libiptext6=y
+CONFIG_PACKAGE_libiwinfo-lua=y
+CONFIG_PACKAGE_liblua=y
+CONFIG_PACKAGE_liblucihttp=y
+CONFIG_PACKAGE_liblucihttp-lua=y
+CONFIG_PACKAGE_liblzma=y
+CONFIG_PACKAGE_libmbim=y
+CONFIG_PACKAGE_libmosquitto-ssl=y
+CONFIG_PACKAGE_libncurses=y
+CONFIG_PACKAGE_libnghttp2=y
+CONFIG_PACKAGE_libopenssl=y
+CONFIG_PACKAGE_libopenssl-conf=y
+CONFIG_PACKAGE_libpcre=y
+CONFIG_PACKAGE_libpcre2=y
+CONFIG_PACKAGE_libqmi=y
+CONFIG_PACKAGE_libqrtr-glib=y
+CONFIG_PACKAGE_libreadline=y
+CONFIG_PACKAGE_librt=y
+CONFIG_PACKAGE_libsqlite3=y
+CONFIG_PACKAGE_libssh=y
+CONFIG_PACKAGE_libssh2=y
+CONFIG_PACKAGE_libstdcpp=y
+CONFIG_PACKAGE_libubus-lua=y
+CONFIG_PACKAGE_libudev-zero=y
+CONFIG_PACKAGE_libusb-1.0=y
+CONFIG_PACKAGE_libustream-openssl=y
+# CONFIG_PACKAGE_libustream-wolfssl is not set
+CONFIG_PACKAGE_libuuid=y
+# CONFIG_PACKAGE_libwolfssl is not set
+CONFIG_PACKAGE_libxtables=y
+CONFIG_PACKAGE_lua=y
+CONFIG_PACKAGE_luci=y
+CONFIG_PACKAGE_luci-app-firewall=y
+CONFIG_PACKAGE_luci-app-opkg=y
+CONFIG_PACKAGE_luci-base=y
+CONFIG_PACKAGE_luci-lib-base=y
+CONFIG_PACKAGE_luci-lib-ip=y
+CONFIG_PACKAGE_luci-lib-jsonc=y
+CONFIG_PACKAGE_luci-lib-nixio=y
+CONFIG_PACKAGE_luci-mod-admin-full=y
+CONFIG_PACKAGE_luci-mod-network=y
+CONFIG_PACKAGE_luci-mod-status=y
+CONFIG_PACKAGE_luci-mod-system=y
+CONFIG_PACKAGE_luci-proto-ipv6=y
+CONFIG_PACKAGE_luci-proto-ppp=y
+CONFIG_PACKAGE_luci-proto-qmi=y
+CONFIG_PACKAGE_luci-ssl-openssl=y
+CONFIG_PACKAGE_luci-theme-bootstrap=y
+CONFIG_PACKAGE_minicom=y
+CONFIG_PACKAGE_openssh-sftp-client=y
+CONFIG_PACKAGE_openssl-util=y
+CONFIG_PACKAGE_psmisc=y
+CONFIG_PACKAGE_qmi-utils=y
+CONFIG_PACKAGE_r8152-firmware=y
+CONFIG_PACKAGE_rpcd=y
+CONFIG_PACKAGE_rpcd-mod-file=y
+CONFIG_PACKAGE_rpcd-mod-iwinfo=y
+CONFIG_PACKAGE_rpcd-mod-luci=y
+CONFIG_PACKAGE_rpcd-mod-rrdns=y
+CONFIG_PACKAGE_shadow-common=y
+CONFIG_PACKAGE_shadow-su=y
+CONFIG_PACKAGE_shadow-utils=y
+CONFIG_PACKAGE_stm32flash=y
+CONFIG_PACKAGE_sudo=y
+CONFIG_PACKAGE_terminfo=y
+CONFIG_PACKAGE_u-boot-ravpower_rp-wd009=y
+CONFIG_PACKAGE_uhttpd=y
+CONFIG_PACKAGE_uhttpd-mod-ubus=y
+CONFIG_PACKAGE_umbim=y
+CONFIG_PACKAGE_uqmi=y
+CONFIG_PACKAGE_usb-modeswitch=y
+CONFIG_PACKAGE_usbutils=y
+CONFIG_PACKAGE_wpad-basic-openssl=y
+# CONFIG_PACKAGE_wpad-basic-wolfssl is not set
+CONFIG_PACKAGE_wwan=y
+CONFIG_PACKAGE_xtables-nft=y
+CONFIG_PACKAGE_zlib=y
+CONFIG_PREINITOPT=y
+CONFIG_SQLITE3_COLUMN_METADATA=y
+CONFIG_SQLITE3_DYNAMIC_EXTENSIONS=y
+CONFIG_SQLITE3_FTS3=y
+CONFIG_SQLITE3_FTS4=y
+CONFIG_SQLITE3_FTS5=y
+CONFIG_SQLITE3_RTREE=y
+CONFIG_TARGET_PREINIT_BROADCAST="172.17.1.255"
+CONFIG_TARGET_PREINIT_IP="172.17.1.1"
+CONFIG_VERSIONOPT=y
+CONFIG_VERSION_BUG_URL="https://www.gabriel.com.br"
+CONFIG_VERSION_CODE=""
+CONFIG_VERSION_DIST="CharlinhOS"
+CONFIG_VERSION_FILENAMES=y
+CONFIG_VERSION_HOME_URL="https://www.gabriel.com.br"
+CONFIG_VERSION_HWREV="0.0.1"
+CONFIG_VERSION_MANUFACTURER="Gabriel Tecnologia"
+CONFIG_VERSION_MANUFACTURER_URL="https://www.gabriel.com.br"
+CONFIG_VERSION_NUMBER="1.0.13"
+CONFIG_VERSION_PRODUCT="Nervosinho"
+CONFIG_VERSION_REPO="https://www.gabriel.com.br"
+CONFIG_VERSION_SUPPORT_URL="https://www.gabriel.com.br"
+# CONFIG_WPA_WOLFSSL is not set
+# CONFIG_PACKAGE_shadow-chage is not set
+# CONFIG_PACKAGE_shadow-chfn is not set
+# CONFIG_PACKAGE_shadow-chgpasswd is not set
+# CONFIG_PACKAGE_shadow-chpasswd is not set
+# CONFIG_PACKAGE_shadow-chsh is not set
+# CONFIG_PACKAGE_shadow-expiry is not set
+# CONFIG_PACKAGE_shadow-faillog is not set
+# CONFIG_PACKAGE_shadow-gpasswd is not set
+# CONFIG_PACKAGE_shadow-groupadd is not set
+# CONFIG_PACKAGE_shadow-groupdel is not set
+# CONFIG_PACKAGE_shadow-groupmems is not set
+# CONFIG_PACKAGE_shadow-groupmod is not set
+# CONFIG_PACKAGE_shadow-groups is not set
+# CONFIG_PACKAGE_shadow-grpck is not set
+# CONFIG_PACKAGE_shadow-grpconv is not set
+# CONFIG_PACKAGE_shadow-grpunconv is not set
+# CONFIG_PACKAGE_shadow-lastlog is not set
+# CONFIG_PACKAGE_shadow-login is not set
+# CONFIG_PACKAGE_shadow-logoutd is not set
+# CONFIG_PACKAGE_shadow-newgidmap is not set
+# CONFIG_PACKAGE_shadow-newgrp is not set
+# CONFIG_PACKAGE_shadow-newuidmap is not set
+# CONFIG_PACKAGE_shadow-newusers is not set
+# CONFIG_PACKAGE_shadow-nologin is not set
+# CONFIG_PACKAGE_shadow-passwd is not set
+# CONFIG_PACKAGE_shadow-pwck is not set
+# CONFIG_PACKAGE_shadow-pwconv is not set
+# CONFIG_PACKAGE_shadow-pwunconv is not set
+# CONFIG_PACKAGE_shadow-useradd is not set
+# CONFIG_PACKAGE_shadow-userdel is not set
+# CONFIG_PACKAGE_shadow-usermod is not set
+# CONFIG_PACKAGE_shadow-vipw is not set
+# CONFIG_shadow-all is not set

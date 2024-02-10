@@ -1,0 +1,5 @@
+logger -t restart_socketxp "Network interface changed. Restarting SocketXP"
+
+service socket_xp restart
+
+logger -t restart_socketxp "SocketXP restarted"
